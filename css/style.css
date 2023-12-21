@@ -1,6 +1,6 @@
 /* Global Variables
 ------------------------------------------ */
-/* Body
+/* Body / Global Elements
 ------------------------------------------ */
 html,
 body {
@@ -14,6 +14,7 @@ body {
   font-size: 14px;
   margin: 0;
   color: #383838;
+  line-height: 1.4em;
 }
 
 a {
@@ -21,11 +22,38 @@ a {
   text-decoration: none;
 }
 
+.btn {
+  background: #ff375f;
+  border: none;
+  padding: 14px 40px;
+  border-radius: 10px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #f13359;
+}
+
+h1 {
+  font-size: 3em;
+  line-height: 1.2em;
+}
+
+h2 {
+  font-size: 2.5em;
+  line-height: 1.2em;
+}
+
 /* Header
 ------------------------------------------ */
 header {
   background: #fff;
   border-bottom: 1px solid #e8e8e8;
+  transition: all 0.5s linear;
+  width: 100%;
+}
+header .inner {
   display: flex;
   justify-content: space-between;
   padding: 0 10vw;
@@ -40,10 +68,13 @@ header .hamburger {
   display: none;
 }
 @media (max-width: 700px) {
+  header .inner {
+    padding: 0 20px;
+  }
   header .hamburger {
     display: block;
   }
-  header .nav-menu {
+  header nav {
     display: none;
   }
 }
@@ -57,15 +88,17 @@ nav {
 nav a {
   font-size: 14px;
   display: inline-block;
-  color: #919191;
+  color: rgb(48, 48, 48) 454;
   border-bottom: 1px solid rgba(0, 0, 0, 0);
   transition: all 0.5s linear;
   height: 100%;
   line-height: 100%;
   padding: 0 14px;
   line-height: 70px;
+  font-weight: bold;
 }
-nav a:hover {
+nav a:hover,
+nav a.active {
   color: #545454;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   transition: all 0.1s linear;
@@ -74,15 +107,47 @@ nav a:hover {
 /* Banner
 ------------------------------------------ */
 .banner {
-  background: url(../images/ai/A_group_of_culturally_diverse_creators_collaborating_98ca68ac-724d-47e3-a0b4-d7ec640ab56a.png);
+  background: #222 url(../images/ai/A_group_of_culturally_diverse_creators_collaborating_98ca68ac-724d-47e3-a0b4-d7ec640ab56a.png);
   background-size: cover;
   height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.banner h1 {
+  color: #fff;
+  font-size: 40px;
+  margin: 0;
+  padding: 0.5em;
+  text-align: center;
 }
 
 /* Content
 ------------------------------------------ */
 .content {
-  padding: 50px 10vw 0;
+  max-width: 660px;
+  margin: 0 auto;
+  padding: 50px 10vw 100px;
+}
+.content img {
+  width: 100%;
+}
+.content .headline-border-top {
+  border-top: 1px solid #aaa;
+  padding-top: 40px;
+  margin-top: 60px;
+}
+.content h1::before,
+.content h2::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: #ff375f;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 /* Footer (ride bottom)

@@ -3,7 +3,7 @@
 $sides: 10vw;
 $footer_height: 80px;
 
-/* Body
+/* Body / Global Elements
 ------------------------------------------ */
 html,
 body {
@@ -17,11 +17,32 @@ body {
   font-size: 14px;
   margin: 0;
   color: #383838;
+  line-height: 1.4em;
 }
 
 a {
   color: #aeaeae;
   text-decoration: none;
+}
+.btn {
+  background: #ff375f;
+  border: none;
+  padding: 14px 40px;
+  border-radius: 10px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  &:hover {
+    background: #f13359;
+  }
+}
+h1 {
+  font-size: 3em;
+  line-height: 1.2em;
+}
+h2 {
+  font-size: 2.5em;
+  line-height: 1.2em;
 }
 
 /* Header
@@ -29,9 +50,16 @@ a {
 header {
   background: #fff;
   border-bottom: 1px solid #e8e8e8;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 $sides;
+  // position: fixed;
+  transition: all 0.5s linear;
+  width: 100%;
+  &.sticky {
+  }
+  .inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 $sides;
+  }
   .logo {
     padding: 10px;
     img {
@@ -42,10 +70,13 @@ header {
     display: none;
   }
   @media (max-width: 700px) {
+    .inner {
+      padding: 0 20px;
+    }
     .hamburger {
       display: block;
     }
-    .nav-menu {
+    nav {
       display: none;
     }
   }
@@ -59,15 +90,17 @@ nav {
   a {
     font-size: 14px;
     display: inline-block;
-    color: #919191;
+    color: rgb(48, 48, 48) 454;
     border-bottom: 1px solid rgba(0, 0, 0, 0);
     transition: all 0.5s linear;
     height: 100%;
     line-height: 100%;
     padding: 0 14px;
     line-height: 70px;
+    font-weight: bold;
   }
-  a:hover {
+  a:hover,
+  a.active {
     color: #545454;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     transition: all 0.1s linear;
@@ -77,15 +110,51 @@ nav {
 /* Banner
 ------------------------------------------ */
 .banner {
-  background: url(../images/ai/A_group_of_culturally_diverse_creators_collaborating_98ca68ac-724d-47e3-a0b4-d7ec640ab56a.png);
+  background: #222
+    url(../images/ai/A_group_of_culturally_diverse_creators_collaborating_98ca68ac-724d-47e3-a0b4-d7ec640ab56a.png);
   background-size: cover;
   height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  h1 {
+    color: #fff;
+    font-size: 40px;
+    margin: 0;
+    padding: 0.5em;
+    text-align: center;
+  }
 }
 
 /* Content
 ------------------------------------------ */
 .content {
-  padding: 50px $sides 0;
+  max-width: 660px;
+  margin: 0 auto;
+  padding: 50px $sides 100px;
+  .inner {
+  }
+  img {
+    width: 100%;
+  }
+  .headline-border-top {
+    border-top: 1px solid #aaa;
+    padding-top: 40px;
+    margin-top: 60px;
+  }
+  h1::before,
+  h2::before {
+    // add :before that creates square in upper left corner
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: #ff375f;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
 
 /* Footer (ride bottom)
