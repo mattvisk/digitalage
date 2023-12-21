@@ -50,33 +50,40 @@ h2 {
 header {
   background: #fff;
   border-bottom: 1px solid #e8e8e8;
+  position: fixed;
   transition: all 0.5s linear;
   width: 100%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 header .inner {
   display: flex;
   justify-content: space-between;
   padding: 0 10vw;
+  height: 75px;
 }
 header .logo {
   padding: 10px;
 }
 header .logo img {
-  height: 50px;
+  height: 56px;
 }
 header .hamburger {
   display: none;
+  border: none;
+  background: none;
+  cursor: pointer;
 }
-@media (max-width: 700px) {
+@media (max-width: 500px) {
   header .inner {
     padding: 0 20px;
   }
   header .hamburger {
     display: block;
   }
-  header nav {
-    display: none;
-  }
+}
+
+.content-spacer {
+  height: 75px;
 }
 
 /* Navigation
@@ -84,24 +91,47 @@ header .hamburger {
 nav {
   display: flex;
   align-items: center;
+  /* Navigation (Mobile)
+  ------------------------------- */
 }
 nav a {
   font-size: 14px;
   display: inline-block;
   color: rgb(48, 48, 48) 454;
-  border-bottom: 1px solid rgba(0, 0, 0, 0);
-  transition: all 0.5s linear;
-  height: 100%;
-  line-height: 100%;
+  border-bottom: 1px solid #ddd;
   padding: 0 14px;
-  line-height: 70px;
+  line-height: 76px;
   font-weight: bold;
 }
 nav a:hover,
 nav a.active {
   color: #545454;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  transition: all 0.1s linear;
+  border-bottom: 1px solid #ff375f;
+}
+@media (max-width: 500px) {
+  nav {
+    display: none;
+  }
+  nav.open {
+    display: block;
+    position: fixed;
+    top: 76px;
+    background: #fff;
+    left: 0;
+    width: 100%;
+    text-align: right;
+    padding: 26px 0;
+  }
+  nav.open a {
+    display: block;
+    border: none;
+    padding: 0 20px;
+    line-height: 2em;
+  }
+  nav.open a:hover,
+  nav.open a.active {
+    text-decoration: underline;
+  }
 }
 
 /* Banner
@@ -137,17 +167,6 @@ nav a.active {
   border-top: 1px solid #aaa;
   padding-top: 40px;
   margin-top: 60px;
-}
-.content h1::before,
-.content h2::before {
-  content: "";
-  display: block;
-  width: 20px;
-  height: 20px;
-  background: #ff375f;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 /* Footer (ride bottom)
