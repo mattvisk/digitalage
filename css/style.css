@@ -25,14 +25,19 @@ a {
 .btn {
   background: #ff375f;
   border: none;
-  padding: 14px 40px;
+  padding: 18px 40px;
   border-radius: 10px;
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 500;
   color: #fff;
   cursor: pointer;
 }
 .btn:hover {
   background: #f13359;
+}
+
+.btn.secondary {
+  background: none;
 }
 
 h1 {
@@ -73,7 +78,7 @@ header .hamburger {
   background: none;
   cursor: pointer;
 }
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   header .inner {
     padding: 0 20px;
   }
@@ -90,7 +95,7 @@ header .hamburger {
 ------------------------------------------ */
 nav {
   display: flex;
-  align-items: center;
+  align-items: bottom;
   /* Navigation (Mobile)
   ------------------------------- */
 }
@@ -101,14 +106,21 @@ nav a {
   border-bottom: 1px solid #ddd;
   padding: 0 14px;
   line-height: 76px;
-  font-weight: bold;
+  font-weight: 500;
+  margin-bottom: -1px;
 }
 nav a:hover,
 nav a.active {
   color: #545454;
   border-bottom: 1px solid #ff375f;
 }
-@media (max-width: 500px) {
+nav a:hover {
+  border-color: #333;
+}
+nav a.active {
+  border-color: #ff375f;
+}
+@media (max-width: 700px) {
   nav {
     display: none;
   }
@@ -147,7 +159,7 @@ nav a.active {
 }
 .banner h1 {
   color: #fff;
-  font-size: 40px;
+  font-size: 36px;
   margin: 0;
   padding: 0.5em;
   text-align: center;
@@ -168,6 +180,16 @@ nav a.active {
   padding-top: 40px;
   margin-top: 60px;
 }
+.content h1 {
+  font-size: 90px;
+  text-transform: uppercase;
+  line-height: 1em;
+  margin-left: -14vw;
+  border: 1px solid #000;
+  border-width: 1px 1px 0px 0px;
+  padding: 4vw;
+  padding-bottom: 0;
+}
 
 /* Footer (ride bottom)
 ------------------------------------------ */
@@ -177,13 +199,13 @@ nav a.active {
 }
 
 .inner-wrapper {
-  padding-bottom: 80px;
+  padding-bottom: 220px;
 }
 
 .footer {
   position: relative;
-  margin-top: -80px;
-  min-height: 80px;
+  margin-top: -220px;
+  min-height: 220px;
   background: #fff;
 }
 .footer .inner {

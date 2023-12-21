@@ -34,6 +34,7 @@ $l = isset($_GET['l']) ? $_GET['l'] : null;
           <a href="/" class="<? if($p==''){ ?>active<? } ?>">Home</a>
           <a href="/about" class="<? if($p=='about'){ ?>active<? } ?>">About</a>
           <a href="/jobs" class="<? if($p=='jobs'){ ?>active<? } ?>">Jobs</a>
+          <a href="/investors" class="<? if($p=='investors'){ ?>active<? } ?>">Investors</a>
           <a href="/contact" class="<? if($p=='contact'){ ?>active<? } ?>">Contact</a>
         </nav>
         <button @click="open = !open" class="hamburger">
@@ -52,11 +53,16 @@ $l = isset($_GET['l']) ? $_GET['l'] : null;
     ----------------------------------------*/ ?>
     <? if($p==null){ ?>
     <div class="banner">
-        <h1>The Future of Social Media Starts Now</h1>
-        <!-- add button -->
-        <button class="btn">
-          Join Waitlist
-        </button>        
+      <h1>The Future of Social Media Starts Now</h1>
+      <!-- add button -->
+      <div class="btns">
+        <button class="btn primary">
+          Join waitlist
+        </button>
+        <button class="btn secondary">
+          Learn More &raquo;
+        </button>   
+      </div>     
     </div>
     <? } ?>
 
@@ -91,8 +97,8 @@ $l = isset($_GET['l']) ? $_GET['l'] : null;
           <? } else if($p=='jobs'){ ?>
             <?php include ('jobs.php'); ?>
 
-          <? } else if($p=='company'){ ?>
-            <h1>Company</h1>
+          <? } else if($p=='investors'){ ?>
+            <?php include ('investors.php'); ?>
 
           <? } else if($p=='signup'){ ?>
             <h1>Sign Up</h1>
