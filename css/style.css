@@ -1,0 +1,90 @@
+/* Global Variables
+------------------------------------------ */
+/* Body
+------------------------------------------ */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  margin: 0;
+  color: #383838;
+}
+
+a {
+  color: #aeaeae;
+  text-decoration: none;
+}
+
+/* Header
+------------------------------------------ */
+header {
+  background: #fff;
+  border-bottom: 1px solid #e8e8e8;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10vw;
+}
+header .logo {
+  padding: 10px;
+}
+header .logo img {
+  height: 50px;
+}
+
+/* Banner
+------------------------------------------ */
+.banner {
+  height: 20px;
+}
+
+/* Navigation
+------------------------------------------ */
+nav {
+  display: flex;
+  align-items: center;
+}
+nav a {
+  font-size: 14px;
+  padding: 10px;
+  display: inline-block;
+  color: #919191;
+  border-bottom: 1px solid #e8e8e8;
+}
+nav a:hover {
+  color: #545454;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+/* Content
+------------------------------------------ */
+.content {
+  padding: 50px 10vw 0;
+}
+
+/* Footer (ride bottom)
+------------------------------------------ */
+.wrapper {
+  height: auto;
+  min-height: 100%;
+}
+
+.inner-wrapper {
+  padding-bottom: 80px;
+}
+
+.footer {
+  position: relative;
+  margin-top: -80px;
+  min-height: 80px;
+  background: #fff;
+}
+.footer .inner {
+  border-top: 1px solid #e8e8e8;
+  padding: 10px 10vw;
+}/*# sourceMappingURL=style.css.map */

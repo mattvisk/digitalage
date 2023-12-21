@@ -10,41 +10,75 @@ $l = isset($_GET['l']) ? $_GET['l'] : null;
 
 <html>
   <head>
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
-    ></script>
-    <!-- tailwind -->
-    <link
-      href="https://unpkg.com/tailwindcss@2.0.1/dist/tailwind.min.css"
-      rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />   
   </head>
   <body>
+    <div class="wrapper">
+      <div class="inner-wrapper">
 
     <? /* Header  
     ----------------------------------------*/ ?>
     <header>
-      <img width="100" src="images/logo/DAlogoLOCKUP_R_clear_dark.png" />
-      <a href="/home">Home</a>
-      <a href="/contact">Contact</a>
-      <a href="/faq">Faq</a>
+      <a class="logo" href="/"><img src="images/logo/da_logo.png" /></a>
+      <nav>
+        <a href="/product">Product</a>
+        <a href="/features">Features</a>
+        <a href="/marketplace">Marketplace</a>
+        <a href="/company">Company</a>
+        <a href="/signup">Sign Up</a>
+      </nav>
     </header>
+
+    <? /* Banner
+    ----------------------------------------*/ ?>
+    <div class="banner">
+    </div>
 
     <? /* Content 
     ----------------------------------------*/ ?>
-    <? if($p=='home'){ ?>
-      <h1>Home</h1>
+    <div class="content">
+      <? if($p==null){ ?>
+        <h1>Home</h1>
+      
+      <? } else if($p=='product'){ ?>
+        <h1>Product</h1>
 
-    <? } else if($p=='about'){ ?>
-      <h1>About</h1>
+      <? } else if($p=='features'){ ?>
+        <h1>Features</h1>
 
-    <? } else if($p=='contact'){ ?>
-      <h1>Contact</h1>
+      <? } else if($p=='marketplace'){ ?>
+        <h1>Marketplace</h1>
 
-    <? } else if($p=='faq'){ ?>
-      <h1>FAQ</h1>
-    <? } ?> 
+      <? } else if($p=='company'){ ?>
+        <h1>Company</h1>
 
+      <? } else if($p=='signup'){ ?>
+        <h1>Sign Up</h1>
+      <? } ?> 
 
-  </body>
+    </div>
+
+    </div>
+  </div>
+
+  <? /* Footer 
+  ----------------------------------------*/ ?>
+  <div class="footer">
+    <div class="inner">
+      <div class="footer-left">
+        <a href="/product">Product</a>
+        <a href="/features">Features</a>
+        <a href="/marketplace">Marketplace</a>
+        <a href="/company">Company</a>
+        <a href="/signup">Sign Up</a>
+      </div>
+      <div class="footer-right">
+        <a href="/privacy">Privacy</a>
+        <a href="/terms">Terms</a>
+        <a href="/contact">Contact</a>
+      </div>
+    </div>
+  </div>
+</body>
 </html>

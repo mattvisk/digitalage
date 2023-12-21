@@ -1,0 +1,91 @@
+/* Global Variables
+------------------------------------------ */
+$sides: 10vw;
+$footer_height: 80px;
+
+/* Body
+------------------------------------------ */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  margin: 0;
+  color: #383838;
+}
+
+a {
+  color: #aeaeae;
+  text-decoration: none;
+}
+
+/* Header
+------------------------------------------ */
+header {
+  background: #fff;
+  border-bottom: 1px solid #e8e8e8;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 $sides;
+  .logo {
+    padding: 10px;
+    img {
+      height: 50px;
+    }
+  }
+}
+
+/* Banner
+------------------------------------------ */
+.banner {
+  height: 20px;
+}
+
+/* Navigation
+------------------------------------------ */
+nav {
+  display: flex;
+  align-items: center;
+  a {
+    font-size: 14px;
+    padding: 10px;
+    display: inline-block;
+    color: #919191;
+    border-bottom: 1px solid #e8e8e8;
+  }
+  a:hover {
+    color: #545454;
+    border-bottom: 1px solid #e8e8e8;
+  }
+}
+
+/* Content
+------------------------------------------ */
+.content {
+  padding: 50px $sides 0;
+}
+
+/* Footer (ride bottom)
+------------------------------------------ */
+.wrapper {
+  height: auto;
+  min-height: 100%;
+}
+.inner-wrapper {
+  padding-bottom: $footer_height;
+}
+.footer {
+  position: relative;
+  margin-top: $footer_height * -1;
+  min-height: $footer_height;
+  background: #fff;
+  .inner {
+    border-top: 1px solid #e8e8e8;
+    padding: 10px $sides;
+  }
+}
