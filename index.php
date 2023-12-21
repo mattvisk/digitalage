@@ -6,10 +6,15 @@ $i = isset($_GET['i']) ? $_GET['i'] : null;
 $x = isset($_GET['x']) ? $_GET['x'] : null;
 $e = isset($_GET['e']) ? $_GET['e'] : null;
 $l = isset($_GET['l']) ? $_GET['l'] : null;
+
+
+$url = '/digitalage';
+
 ?>
 
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@3.0.0/dist/tailwind.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -29,7 +34,7 @@ $l = isset($_GET['l']) ? $_GET['l'] : null;
     ----------------------------------------*/ ?>
     <header x-data="{ open: false }">
       <div class="inner">
-        <a class="logo" href="/"><img src="images/logo/da_logo.png" /></a>
+        <a class="logo" href="<?=$url?>/"><img src="images/logo/da_logo.png" /></a>
         <!-- Nav but add clas when php $p is equal to url -->
         <nav :class="{'open': open}">
           <? include 'links.php' ?>
