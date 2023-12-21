@@ -111,6 +111,13 @@ $l = isset($_GET['l']) ? $_GET['l'] : null;
     ----------------------------------------*/ ?>    
     <div class="footer">
       <div class="inner">
+        <div class="footer-left">
+          <nav>
+            <?php include 'links.php' ?>
+            <a class="border-left" href="/privacy">Privacy</a>
+            <a href="/terms">Terms</a>
+          </nav>
+        </div>
         <ul class="social-icons">
           <li><a href="https://www.facebook.com/DigitalageInc" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
           <li><a href="https://www.instagram.com/godigitalage/" target="_blank"><i class="fab fa-instagram"></i></a></li>
@@ -118,15 +125,8 @@ $l = isset($_GET['l']) ? $_GET['l'] : null;
           <li><a href="https://www.tiktok.com/@digitalageinc" target="_blank"><i class="fab fa-tiktok"></i></a></li>
           <li><a href="https://linktr.ee/digitalageinc" target="_blank"><i class="fas fa-link"></i></a></li>
         </ul>
-        <div class="footer-left">
-          <nav>
-            <?php include 'links.php' ?>
-            <a href="/privacy">Privacy</a>
-            <a href="/terms">Terms</a>
-          </nav>
-          <p>&copy;<?php echo date("Y"); ?> Digitalage</p>
-        </div>
-      </div><!-- end inner -->
-    </div><!-- end footer -->
+        <p>&copy;<?php echo date("Y"); ?> Digitalage</p>
+      </div>
+    </div>
   </body>
 </html>

@@ -18,7 +18,7 @@ body {
 }
 
 a {
-  color: #aeaeae;
+  color: #444;
   text-decoration: none;
 }
 .btn {
@@ -197,17 +197,36 @@ header nav {
   margin-top: $footer_height * -1;
   min-height: $footer_height;
   background: #fff;
+  color: #aaa;
+  font-size: 12px;
   .inner {
-    display: flex;
+    // display: flex;
     justify-content: space-between;
     border-top: 1px solid #e8e8e8;
     padding: 40px $sides;
+  }
+  nav {
+    margin: 10px 0 16px;
+    a {
+      margin-right: 6px;
+      padding-right: 6px;
+      &.border-left {
+        border-left: 1px solid #ddd;
+        margin-left: 0px;
+        padding-left: 12px;
+      }
+    }
+    a:last-child {
+      margin-right: 0;
+      padding-right: 0;
+      border-right: none;
+    }
   }
   .social-icons {
     display: flex;
     justify-content: left;
     align-items: top;
-    margin: 0;
+    margin: 0 0 30px;
     padding: 0;
     li {
       list-style: none;
