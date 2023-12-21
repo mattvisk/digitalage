@@ -1,4 +1,4 @@
-<h1>Our Vision</h1>
+<h1 class="red">Our Vision</h1>
   <p>
     Digitalage envisions a social media landscape that empowers individuals, enriches lives, and fosters authentic connections. One where creators prosper, communities thrive, and users regain control over their digital experiences. We are building that future.
   </p>

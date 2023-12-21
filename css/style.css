@@ -175,6 +175,22 @@ header nav a.active {
   padding-top: 40px;
   margin-top: 60px;
 }
+.content h1 {
+  font-size: 90px;
+  line-height: 1em;
+  margin-left: -8vw;
+  display: inline-block;
+  padding: 30px;
+  background: #17a4cd;
+  color: #fff;
+}
+.content h1.yellow {
+  background: #ebbe2e;
+}
+.content h1.red {
+  background: #ff375f;
+}
+
 /* Footer (ride bottom)
 ------------------------------------------ */
 .footer {

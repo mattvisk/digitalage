@@ -1,4 +1,4 @@
-<h1>Join Our Mission</h1>
+<h1 class="red">Our Mission</h1>
   <p>
     Want to be part of building the ethical social platform of the future? Digitalage is growing our team of world-class technologists, designers, community specialists, and more.
   </p>

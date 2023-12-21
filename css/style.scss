@@ -179,14 +179,19 @@ header nav {
     margin-top: 60px;
   }
   h1 {
-    // font-size: 90px;
-    // text-transform: uppercase;
-    // line-height: 1em;
-    // margin-left: -14vw;
-    // border: 1px solid #000;
-    // border-width: 1px 1px 0px 0px;
-    // padding: 4vw;
-    // padding-bottom: 0;
+    font-size: 90px;
+    line-height: 1em;
+    margin-left: -8vw;
+    display: inline-block;
+    padding: 30px;
+    background: #17a4cd;
+    color: #fff;
+  }
+  h1.yellow {
+    background: #ebbe2e;
+  }
+  h1.red {
+    background: #ff375f;
   }
 }
 
