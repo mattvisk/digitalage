@@ -1,12 +1,7 @@
 /* Global Variables
 ------------------------------------------ */
-/* Body / Global Elements
+/* Body 
 ------------------------------------------ */
-html,
-body {
-  height: 100%;
-}
-
 body {
   background: #eee;
   color: #333;
@@ -93,13 +88,13 @@ header .hamburger {
 
 /* Navigation
 ------------------------------------------ */
-nav {
+header nav {
   display: flex;
   align-items: bottom;
   /* Navigation (Mobile)
   ------------------------------- */
 }
-nav a {
+header nav a {
   font-size: 14px;
   display: inline-block;
   color: rgb(48, 48, 48) 454;
@@ -109,22 +104,22 @@ nav a {
   font-weight: 500;
   margin-bottom: -1px;
 }
-nav a:hover,
-nav a.active {
+header nav a:hover,
+header nav a.active {
   color: #545454;
   border-bottom: 1px solid #ff375f;
 }
-nav a:hover {
+header nav a:hover {
   border-color: #333;
 }
-nav a.active {
+header nav a.active {
   border-color: #ff375f;
 }
 @media (max-width: 700px) {
-  nav {
+  header nav {
     display: none;
   }
-  nav.open {
+  header nav.open {
     display: block;
     position: fixed;
     top: 76px;
@@ -134,14 +129,14 @@ nav a.active {
     text-align: right;
     padding: 26px 0;
   }
-  nav.open a {
+  header nav.open a {
     display: block;
     border: none;
     padding: 0 20px;
     line-height: 2em;
   }
-  nav.open a:hover,
-  nav.open a.active {
+  header nav.open a:hover,
+  header nav.open a.active {
     text-decoration: underline;
   }
 }
@@ -180,28 +175,8 @@ nav a.active {
   padding-top: 40px;
   margin-top: 60px;
 }
-.content h1 {
-  font-size: 90px;
-  text-transform: uppercase;
-  line-height: 1em;
-  margin-left: -14vw;
-  border: 1px solid #000;
-  border-width: 1px 1px 0px 0px;
-  padding: 4vw;
-  padding-bottom: 0;
-}
-
 /* Footer (ride bottom)
 ------------------------------------------ */
-.wrapper {
-  height: auto;
-  min-height: 100%;
-}
-
-.inner-wrapper {
-  padding-bottom: 220px;
-}
-
 .footer {
   position: relative;
   margin-top: -220px;
@@ -209,6 +184,50 @@ nav a.active {
   background: #fff;
 }
 .footer .inner {
+  display: flex;
+  justify-content: space-between;
   border-top: 1px solid #e8e8e8;
-  padding: 10px 10vw;
+  padding: 40px 10vw;
+}
+.footer .social-icons {
+  display: flex;
+  justify-content: left;
+  align-items: top;
+  margin: 0;
+  padding: 0;
+}
+.footer .social-icons li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-right: 10px;
+}
+.footer .social-icons a {
+  background: #333;
+  color: #fff;
+  border-radius: 4px;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+}
+.footer .social-icons a i {
+  line-height: 40px;
+}
+
+/* Footer (ride bottom) 
+------------------------------------------ */
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  height: auto;
+  min-height: 100%;
+}
+
+.inner-wrapper {
+  padding-bottom: 220px;
 }/*# sourceMappingURL=style.css.map */

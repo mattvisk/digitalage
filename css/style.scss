@@ -5,13 +5,8 @@ $footer_height: 220px;
 $header_height: 76px;
 $mobile_breakpoint: 700px;
 
-/* Body / Global Elements
+/* Body 
 ------------------------------------------ */
-html,
-body {
-  height: 100%;
-}
-
 body {
   background: #eee;
   color: #333;
@@ -95,7 +90,7 @@ header {
 
 /* Navigation
 ------------------------------------------ */
-nav {
+header nav {
   display: flex;
   align-items: bottom;
   a {
@@ -184,33 +179,68 @@ nav {
     margin-top: 60px;
   }
   h1 {
-    font-size: 90px;
-    text-transform: uppercase;
-    line-height: 1em;
-    margin-left: -14vw;
-    border: 1px solid #000;
-    border-width: 1px 1px 0px 0px;
-    padding: 4vw;
-    padding-bottom: 0;
+    // font-size: 90px;
+    // text-transform: uppercase;
+    // line-height: 1em;
+    // margin-left: -14vw;
+    // border: 1px solid #000;
+    // border-width: 1px 1px 0px 0px;
+    // padding: 4vw;
+    // padding-bottom: 0;
   }
 }
 
 /* Footer (ride bottom)
 ------------------------------------------ */
-.wrapper {
-  height: auto;
-  min-height: 100%;
-}
-.inner-wrapper {
-  padding-bottom: $footer_height;
-}
 .footer {
   position: relative;
   margin-top: $footer_height * -1;
   min-height: $footer_height;
   background: #fff;
   .inner {
+    display: flex;
+    justify-content: space-between;
     border-top: 1px solid #e8e8e8;
-    padding: 10px $sides;
+    padding: 40px $sides;
   }
+  .social-icons {
+    display: flex;
+    justify-content: left;
+    align-items: top;
+    margin: 0;
+    padding: 0;
+    li {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      margin-right: 10px;
+    }
+    a {
+      background: #333;
+      color: #fff;
+      border-radius: 4px;
+      height: 40px;
+      width: 40px;
+      line-height: 40px;
+      display: inline-block;
+      text-align: center;
+      i {
+        line-height: 40px;
+      }
+    }
+  }
+}
+
+/* Footer (ride bottom) 
+------------------------------------------ */
+html,
+body {
+  height: 100%;
+}
+.wrapper {
+  height: auto;
+  min-height: 100%;
+}
+.inner-wrapper {
+  padding-bottom: $footer_height;
 }

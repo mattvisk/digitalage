@@ -12,6 +12,7 @@ $l = isset($_GET['l']) ? $_GET['l'] : null;
   <head>
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@3.0.0/dist/tailwind.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="css/style.css" />   
     <script>
       window.addEventListener('scroll', function() {
@@ -31,11 +32,7 @@ $l = isset($_GET['l']) ? $_GET['l'] : null;
         <a class="logo" href="/"><img src="images/logo/da_logo.png" /></a>
         <!-- Nav but add clas when php $p is equal to url -->
         <nav :class="{'open': open}">
-          <a href="/" class="<? if($p==''){ ?>active<? } ?>">Home</a>
-          <a href="/about" class="<? if($p=='about'){ ?>active<? } ?>">About</a>
-          <a href="/jobs" class="<? if($p=='jobs'){ ?>active<? } ?>">Jobs</a>
-          <a href="/investors" class="<? if($p=='investors'){ ?>active<? } ?>">Investors</a>
-          <a href="/contact" class="<? if($p=='contact'){ ?>active<? } ?>">Contact</a>
+          <? include 'links.php' ?>
         </nav>
         <button @click="open = !open" class="hamburger">
           <svg x-show="!open" class="open" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#888" d="M3 18h18v-2H3v2zM3 13h18v-2H3v2zM3 6v2h18V6H3z"/></svg>
@@ -107,26 +104,29 @@ $l = isset($_GET['l']) ? $_GET['l'] : null;
       </div>
 
 
-
-    <? /* Footer (Ride bottom)
-    ----------------------------------------*/ ?>
     </div><!-- end inner-wrapper -->
     </div><!-- end wrapper -->
+
+    <? /* Footer (Ride bottom)
+    ----------------------------------------*/ ?>    
     <div class="footer">
       <div class="inner">
+        <ul class="social-icons">
+          <li><a href="https://www.facebook.com/DigitalageInc" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="https://www.instagram.com/godigitalage/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://twitter.com/go_digitalage" target="_blank"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://www.tiktok.com/@digitalageinc" target="_blank"><i class="fab fa-tiktok"></i></a></li>
+          <li><a href="https://linktr.ee/digitalageinc" target="_blank"><i class="fas fa-link"></i></a></li>
+        </ul>
         <div class="footer-left">
-          <a href="/product">Product</a>
-          <a href="/features">Features</a>
-          <a href="/marketplace">Marketplace</a>
-          <a href="/company">Company</a>
-          <a href="/signup">Sign Up</a>
+          <nav>
+            <?php include 'links.php' ?>
+            <a href="/privacy">Privacy</a>
+            <a href="/terms">Terms</a>
+          </nav>
+          <p>&copy;<?php echo date("Y"); ?> Digitalage</p>
         </div>
-        <div class="footer-right">
-          <a href="/privacy">Privacy</a>
-          <a href="/terms">Terms</a>
-          <a href="/contact">Contact</a>
-        </div>
-      </div>
-    </div>
+      </div><!-- end inner -->
+    </div><!-- end footer -->
   </body>
 </html>
