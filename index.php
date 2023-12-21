@@ -16,7 +16,7 @@ $l = isset($_GET['l']) ? $_GET['l'] : null;
     ></script>
     <!-- tailwind -->
     <link
-      href="https://unpkg.com/tailwindcss/dist/tailwind.min.css"
+      href="https://unpkg.com/tailwindcss@2.0.1/dist/tailwind.min.css"
       rel="stylesheet" />
   </head>
   <body>
