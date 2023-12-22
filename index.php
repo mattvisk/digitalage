@@ -117,11 +117,14 @@ if (strpos($_SERVER['HTTP_HOST'], 'mattvisk.com') !== false) {
     ----------------------------------------*/ ?>    
     <div class="footer">
       <div class="inner">
-        <nav>
-          <?php include 'links.php' ?>
-          <li><a class="border-left" href="/privacy">Privacy</a></li>
-          <li><a href="/terms">Terms</a></li>
-        </nav>
+        <div class="footer-left">
+          <nav>
+            <?php include 'links.php' ?>
+            <li><a class="border-left" href="/privacy">Privacy</a></li>
+            <li><a href="/terms">Terms</a></li>
+          </nav>
+          <p>&copy;<?php echo date("Y"); ?> Digitalage</p>
+        </div>
         <ul class="social-icons">
           <li><a href="https://www.facebook.com/DigitalageInc" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
           <li><a href="https://www.instagram.com/godigitalage/" target="_blank"><i class="fab fa-instagram"></i></a></li>
@@ -130,7 +133,6 @@ if (strpos($_SERVER['HTTP_HOST'], 'mattvisk.com') !== false) {
           <li><a href="https://linktr.ee/digitalageinc" target="_blank"><i class="fas fa-link"></i></a></li>
           <br>
         </ul>
-        <p>&copy;<?php echo date("Y"); ?> Digitalage</p>
       </div>
     </div>
   </body>
