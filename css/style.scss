@@ -92,7 +92,7 @@ header {
 ------------------------------------------ */
 header nav {
   display: flex;
-  align-items: bottom;
+  align-items: center;
   a {
     font-size: 14px;
     display: inline-block;
@@ -115,6 +115,22 @@ header nav {
   a.active {
     border-color: #ff375f;
   }
+  a.btn {
+    padding: 0 18px;
+    line-height: 34px;
+    height: 34px;
+    margin-left: 20px;
+    font-weight: normal;
+    font-size: 14px;
+    background: #17a4cd;
+    border-radius: 40px;
+  }
+  a.btn:hover {
+    background: #1fb4e2;
+    border: none;
+    color: #fff;
+  }
+
   /* Navigation (Mobile)
   ------------------------------- */
   @media (max-width: $mobile_breakpoint) {
@@ -179,13 +195,14 @@ header nav {
     margin-top: 60px;
   }
   h1 {
-    font-size: 90px;
-    line-height: 1em;
-    margin-left: -8vw;
+    font-size: 70px;
+    line-height: 1.2em;
+    // margin-left: -8vw;
     display: inline-block;
     padding: 30px;
     background: #17a4cd;
     color: #fff;
+    border-radius: 8px;
   }
   h1.yellow {
     background: #ebbe2e;
@@ -209,9 +226,10 @@ header nav {
     justify-content: space-between;
     border-top: 1px solid #e8e8e8;
     padding: 40px $sides;
+    display: flex;
+    align-items: center;
   }
   nav {
-    margin: 10px 0 16px;
     a {
       margin-right: 6px;
       padding-right: 6px;
@@ -226,12 +244,14 @@ header nav {
       padding-right: 0;
       border-right: none;
     }
+    p {
+      margin: 4px 0 0;
+    }
   }
   .social-icons {
     display: flex;
     justify-content: left;
-    align-items: top;
-    margin: 0 0 30px;
+    align-items: center;
     padding: 0;
     li {
       list-style: none;

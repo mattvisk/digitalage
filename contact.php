@@ -1,4 +1,4 @@
-<h1 class="yellow">Contact Digitalage</h1>
+<h1 class="red">Contact Digitalage</h1>
   <p>
     Thank you for your interest in learning more about Digitalage. Please get in touch with any platform questions, partnership inquiries, investment opportunities, or just to join our community!
   </p>
