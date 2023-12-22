@@ -7,9 +7,12 @@ $x = isset($_GET['x']) ? $_GET['x'] : null;
 $e = isset($_GET['e']) ? $_GET['e'] : null;
 $l = isset($_GET['l']) ? $_GET['l'] : null;
 
-
-$url = '/digitalage';
-$url = '';
+// if host has mattvisk.com in it do something
+if (strpos($_SERVER['HTTP_HOST'], 'mattvisk.com') !== false) {
+  $url = '/digitalage';
+} else {
+  $url = '';
+}
 
 ?>
 
@@ -39,7 +42,7 @@ $url = '';
             <!-- Nav but add clas when php $p is equal to url -->
             <nav :class="{'open': open}">
               <? include 'links.php' ?>
-              <a href="/signup" class="btn">Build with us</a>
+              <li><a href="/signup" class="btn">Build with us</a></li>
             </nav>
             <button @click="open = !open" class="hamburger">
               <svg x-show="!open" class="open" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#888" d="M3 18h18v-2H3v2zM3 13h18v-2H3v2zM3 6v2h18V6H3z"/></svg>
