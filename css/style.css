@@ -190,7 +190,7 @@ header nav a.btn:hover {
 /* Content
 ------------------------------------------ */
 .content {
-  max-width: 660px;
+  max-width: 860px;
   margin: 0 auto;
   padding: 50px 10vw 100px;
 }
@@ -203,7 +203,7 @@ header nav a.btn:hover {
   margin-top: 60px;
 }
 .content h1 {
-  font-size: 70px;
+  font-size: 60px;
   line-height: 1.2em;
   display: inline-block;
   padding: 30px;
