@@ -240,6 +240,11 @@ header nav a.btn:hover {
     display: block;
   }
 }
+@media (max-width: 460px) {
+  .footer {
+    text-align: center;
+  }
+}
 .footer nav {
   display: flex;
 }
@@ -258,6 +263,19 @@ header nav a.btn:hover {
   padding-right: 0;
   border-right: none;
 }
+@media (max-width: 460px) {
+  .footer nav {
+    display: block;
+  }
+  .footer nav li {
+    display: inline-block;
+  }
+  .footer nav a.border-left {
+    border-left: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
+}
 .footer p {
   margin: 4px 0 0;
 }
@@ -267,11 +285,22 @@ header nav a.btn:hover {
   align-items: center;
   padding: 0;
 }
+@media (max-width: 460px) {
+  .footer .social-icons {
+    display: block;
+  }
+}
 .footer .social-icons li {
   list-style: none;
   padding: 0;
   margin: 0;
   margin-right: 10px;
+}
+@media (max-width: 460px) {
+  .footer .social-icons li {
+    display: inline-block;
+    margin: 2px;
+  }
 }
 .footer .social-icons a {
   background: #333;

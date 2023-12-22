@@ -252,6 +252,10 @@ header nav {
       display: block;
     }
   }
+  @media (max-width: 460px) {
+    text-align: center;
+  }
+
   nav {
     display: flex;
     li {
@@ -271,20 +275,39 @@ header nav {
       padding-right: 0;
       border-right: none;
     }
+    @media (max-width: 460px) {
+      display: block;
+      li {
+        display: inline-block;
+      }
+      a.border-left {
+        border-left: none;
+        margin-left: 0;
+        padding-left: 0;
+      }
+    }
   }
   p {
     margin: 4px 0 0;
   }
+
   .social-icons {
     display: flex;
     justify-content: left;
     align-items: center;
+    @media (max-width: 460px) {
+      display: block;
+    }
     padding: 0;
     li {
       list-style: none;
       padding: 0;
       margin: 0;
       margin-right: 10px;
+      @media (max-width: 460px) {
+        display: inline-block;
+        margin: 2px;
+      }
     }
     a {
       background: #333;
