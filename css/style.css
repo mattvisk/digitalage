@@ -17,6 +17,10 @@ a {
   text-decoration: none;
 }
 
+p {
+  padding: 0 14vw 0 2vw;
+}
+
 .btn {
   background: #ff375f;
   border: none;
@@ -38,6 +42,7 @@ a {
 h1 {
   font-size: 3em;
   line-height: 1.2em;
+  margin-bottom: 0.2em;
 }
 
 h2 {
@@ -178,7 +183,7 @@ header nav a.btn:hover {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-bottom: 180px;
+  margin-bottom: 120px;
   height: 100vh;
 }
 .banner h1 {

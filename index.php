@@ -77,8 +77,8 @@ if (strpos($_SERVER['HTTP_HOST'], 'mattvisk.com') !== false) {
             <? if($p==null){ ?>
               <h1 class="overlay">The Future of Social Media Starts Now</h1>
               <img alt="Digital painting of a group of young professionals" src="images/ai/digital_painting_a_group_of_young_professionals_dive_ad1e12a5-8c45-47d6-b665-560e376fb41f.png" />
-              <p>Digitalage is pioneering a revolutionary social media platform centered around elevating creators, protecting individual rights, and cultivating authentic communities.</p>
-              <p>We are reimagining social technology to put control back into the hands of users - giving you unmatched authority over your personal data and digital footprint. Our platform is designed to provide transparency, ensure content integrity, foster meaningful connections, and enable equitable compensation.</p>
+              <p class="large">Digitalage is pioneering a revolutionary social media platform centered around elevating creators, protecting individual rights, and cultivating authentic communities.</p>
+              <p class="large">We are reimagining social technology to put control back into the hands of users - giving you unmatched authority over your personal data and digital footprint. Our platform is designed to provide transparency, ensure content integrity, foster meaningful connections, and enable equitable compensation.</p>
               
               <h2 class="headline-border-top">The Digitalage Difference</h2>
               <img alt="Digital painting of a group of young professionals" src="images/ai/illustration_creators_conceptualizing_ideas_on_devic_76ac6f73-b25e-4826-9441-6660f8f54d06.png" />
