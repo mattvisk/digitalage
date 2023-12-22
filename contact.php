@@ -2,7 +2,8 @@
   <p>
     Thank you for your interest in learning more about Digitalage. Please get in touch with any platform questions, partnership inquiries, investment opportunities, or just to join our community!
   </p>
-  <p>
+  <p>We make every effort to respond to all inquiries within 48 hours! Please reach out by email <a href="mailto:connect@digitalage.com">connect@digitalage.com</a></p>
+  <!-- <p>
     There are a few easy ways to reach us:
   </p>
   <h2>By Email</h2>
@@ -31,4 +32,4 @@
   </p>
   <p>
     We look forward to hearing from you soon and welcoming you into the Digitalage community!
-  </p>
+  </p> -->

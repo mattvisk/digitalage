@@ -11,7 +11,7 @@ body {
   background: #eee;
   color: #333;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   margin: 0;
   color: #383838;
   line-height: 1.4em;
@@ -217,6 +217,14 @@ header nav {
     border-top: 1px solid #aaa;
     padding-top: 40px;
     margin-top: 60px;
+    color: #fff;
+    background: #111;
+    border-radius: 8px;
+    padding: 20px;
+    display: inline-block;
+    margin: 1em 0 -30px -4vw;
+    z-index: 1;
+    position: relative;
   }
   h1 {
     font-size: 50px;
