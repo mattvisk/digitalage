@@ -211,6 +211,16 @@ header nav a.btn:hover {
   color: #fff;
   border-radius: 8px;
 }
+@media (max-width: 760px) {
+  .content h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-left: 0;
+  }
+  .content h2 {
+    font-size: 30px;
+  }
+}
 .content h1.yellow {
   background: #ebbe2e;
 }
