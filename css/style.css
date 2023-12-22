@@ -240,7 +240,11 @@ header nav a.btn:hover {
     display: block;
   }
 }
-.footer nav a {
+.footer nav {
+  display: flex;
+}
+.footer nav li {
+  list-style: none;
   margin-right: 6px;
   padding-right: 6px;
 }

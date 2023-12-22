@@ -253,9 +253,13 @@ header nav {
     }
   }
   nav {
-    a {
+    display: flex;
+    li {
+      list-style: none;
       margin-right: 6px;
       padding-right: 6px;
+    }
+    a {
       &.border-left {
         border-left: 1px solid #ddd;
         margin-left: 0px;
