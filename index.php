@@ -65,21 +65,32 @@ if (strpos($_SERVER['HTTP_HOST'], 'mattvisk.com') !== false) {
             </button>
             <button class="btn secondary">
               Learn More &raquo;
-            </button>   
+            </button> 
+
           </div>     
         </div>
         <? } ?>
 
         <? /* Content 
         ----------------------------------------*/ ?>
+
+
+        <div class="super-content">
+          <div class="frame" style="background-image: url('images/ai/digital_painting_a_group_of_young_professionals_dive_ad1e12a5-8c45-47d6-b665-560e376fb41f.png')">
+            <h1 class="title overlay">The Future of Social Media Starts Now</h1>
+            <!-- <img alt="Digital painting of a group of young professionals" src="images/ai/digital_painting_a_group_of_young_professionals_dive_ad1e12a5-8c45-47d6-b665-560e376fb41f.png" /> -->
+          </div>
+          <div class="long-text">
+            <p>Digitalage is pioneering a revolutionary social media platform centered around elevating creators, protecting individual rights, and cultivating authentic communities.</p>
+            <p>We are reimagining social technology to put control back into the hands of users - giving you unmatched authority over your personal data and digital footprint. Our platform is designed to provide transparency, ensure content integrity, foster meaningful connections, and enable equitable compensation.</p>
+          </div>
+        </div>
+
+
+
         <div class="content">
           <div class="inner">
             <? if($p==null){ ?>
-              <h1 class="overlay">The Future of Social Media Starts Now</h1>
-              <img alt="Digital painting of a group of young professionals" src="images/ai/digital_painting_a_group_of_young_professionals_dive_ad1e12a5-8c45-47d6-b665-560e376fb41f.png" />
-              <p class="large">Digitalage is pioneering a revolutionary social media platform centered around elevating creators, protecting individual rights, and cultivating authentic communities.</p>
-              <p class="large">We are reimagining social technology to put control back into the hands of users - giving you unmatched authority over your personal data and digital footprint. Our platform is designed to provide transparency, ensure content integrity, foster meaningful connections, and enable equitable compensation.</p>
-              
               <h2 class="headline-border-top">The Digitalage Difference</h2>
               <img alt="Digital painting of a group of young professionals" src="images/ai/illustration_creators_conceptualizing_ideas_on_devic_76ac6f73-b25e-4826-9441-6660f8f54d06.png" />
               <p><b>User-Centric Design:</b> Our interface and algorithms are built to serve user needs - not exploit them. We enable authentic connections without manipulating recommendations or compromising privacy.</p>
@@ -87,11 +98,6 @@ if (strpos($_SERVER['HTTP_HOST'], 'mattvisk.com') !== false) {
               <p><b>Decentralized Architecture:</b> Our decentralized platform powered by blockchain ensures security, transparency and gives users control over their data.</p>
               <p><b>Content Authenticity:</b> We leverage advanced analytics to authenticate content, counter disinformation, and promote accurate information across the platform.</p>
 
-              <h2 class="headline-border-top">Join the Digitalage Community</h2>
-              <img alt="Digital painting of a group of young professionals" src="images/ai/network_interconnected_pieces_authentic_verified_con_ac462519-f3f7-4d2a-b3db-db60ed4fb060.png" />
-              <p>We invite creators, consumers, partners and investors to help us reinvent social media technology for good. Sign up today to receive updates and early access.</p>
-              <p>Call to Action Button: Join Digitalage Now</p>
-              <p>By building an ethical platform focused on transparency and putting principles first, Digitalage aims to restore trust in social systems and online communities. The future starts now - join us.</p>      
             <? } else if($p=='about'){ ?>
               <?php include ('about.php'); ?>
 
@@ -107,6 +113,18 @@ if (strpos($_SERVER['HTTP_HOST'], 'mattvisk.com') !== false) {
             <? } else if($p=='signup'){ ?>
               <h1>Sign Up</h1>
             <? } ?> 
+          </div>
+        </div>
+
+        <div class="super-content">
+          <div class="long-text">
+            <p>We invite creators, consumers, partners and investors to help us reinvent social media technology for good. Sign up today to receive updates and early access.</p>
+            <p>Call to Action Button: Join Digitalage Now</p>
+            <p>By building an ethical platform focused on transparency and putting principles first, Digitalage aims to restore trust in social systems and online communities. The future starts now - join us.</p>
+          </div>
+          <div class="frame" style="background-image: url('images/ai/network_interconnected_pieces_authentic_verified_con_ac462519-f3f7-4d2a-b3db-db60ed4fb060.png')">
+            <h1 class="title overlay">Join the Digitalage Community</h1>
+            <!-- <img alt="Digital painting of a group of young professionals" src="images/ai/digital_painting_a_group_of_young_professionals_dive_ad1e12a5-8c45-47d6-b665-560e376fb41f.png" /> -->
           </div>
         </div>
 

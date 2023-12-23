@@ -183,7 +183,6 @@ header nav a.btn:hover {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-bottom: 120px;
   height: 100vh;
 }
 .banner h1 {
@@ -247,6 +246,45 @@ header nav a.btn:hover {
 }
 .content h1.red {
   background: #ff375f;
+}
+
+/* Super Content 
+------------------------------------------ */
+.super-content {
+  justify-content: space-between;
+  align-items: top;
+  padding: 0 4vw 0 0;
+  display: flex;
+}
+.super-content .title {
+  position: absolute;
+  color: #fff;
+  z-index: 1;
+  margin: 0;
+  left: 0;
+  top: 0;
+  font-size: 80px;
+  border-radius: 8px;
+  text-shadow: 0 8px 8px rgba(0, 0, 0, 0.4);
+}
+.super-content .frame {
+  width: 50%;
+  min-width: 400px;
+  margin-right: 4vw;
+  overflow: hidden;
+  padding: 10vw;
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+}
+.super-content .frame img {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.super-content .long-text {
+  padding: 4vw 0;
+  width: 40vw;
 }
 
 /* Footer (ride bottom)

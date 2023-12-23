@@ -190,7 +190,7 @@ header nav {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-bottom: 120px;
+  // margin-bottom: 120px;
   height: 100vh;
 
   h1 {
@@ -259,6 +259,47 @@ header nav {
   }
   h1.red {
     background: #ff375f;
+  }
+}
+
+/* Super Content 
+------------------------------------------ */
+.super-content {
+  // display: flex;
+  justify-content: space-between;
+  align-items: top;
+  padding: 0 4vw 0 0;
+  display: flex;
+  .title {
+    position: absolute;
+    color: #fff;
+    z-index: 1;
+    // background: rgba(0, 0, 0, 0.8);
+    margin: 0;
+    left: 0;
+    top: 0;
+    font-size: 80px;
+    border-radius: 8px;
+    text-shadow: 0 8px 8px rgba(0, 0, 0, 0.4);
+  }
+  .frame {
+    width: 50%;
+    min-width: 400px;
+    margin-right: 4vw;
+    overflow: hidden;
+    padding: 10vw;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    img {
+      top: 0;
+      left: 0;
+      position: absolute;
+    }
+  }
+  .long-text {
+    padding: 4vw 0;
+    width: 40vw;
   }
 }
 
